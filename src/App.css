@@ -1,3 +1,12 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center; 
+  transition: background-color 0.3s ease;
+}
+
 body.light {
   background-color: white;
   color: black;
@@ -8,19 +17,15 @@ body.dark {
   color: white;
 }
 
-.theme-toggle-container {
-  text-align: center;
-  margin-top: 2rem;
-}
-
 button {
-  padding: 10px 20px;
+  padding: 12px 24px;
   font-size: 1rem;
-  cursor: pointer;
   border: none;
-  border-radius: 5px;
+  border-radius: 6px;
   background-color: orange;
-  color: black;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
