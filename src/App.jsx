@@ -4,7 +4,6 @@ import './App.css';
 function App() {
   const [theme, setTheme] = useState('light');
 
-  // Load theme from localStorage on first render
   useEffect(() => {
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme) {
@@ -13,7 +12,6 @@ function App() {
     }
   }, []);
 
-  // Toggle theme and update localStorage
   const toggleTheme = () => {
     const newTheme = theme === 'light' ? 'dark' : 'light';
     setTheme(newTheme);
